@@ -1,0 +1,3 @@
+awscli
+boto3 #! already satisfied with the above
+awscli-local
