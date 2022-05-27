@@ -55,11 +55,20 @@ aws --endpoint-url http://localhost:4566 cloudformation list-stacks
 awslocal cloudformation list-stacks
 ```
 
-## Subindo uma infra de exemplo como código
+## Subindo um exemplo de infra como código
 
+### Exemplo de infra como código
+
+1. Deploy de cloudformation com um simples S3
 ```
 awslocal cloudformation deploy --stack-name lstack-s3 --template-file infra_cf/s3/sample.yaml
 ```
+
+2. Removendo o cloudformation
+```
+awslocal cloudformation delete-stack --stack-name lstack-s3
+```
+
 
 ## License
 This software library is released under the Apache License, Version 2.0 (see LICENSE).
